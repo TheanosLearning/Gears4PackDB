@@ -25,7 +25,7 @@ create table packs(
 );
 ```
 3. Configure Apache CORS
-```bash
+```sh
 sudo vim /etc/apache2/sites-enabled/000-default.conf@
 sudo vim /etc/apache2/sites-enabled/001-cloud9.conf@
 ```
