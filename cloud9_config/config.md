@@ -13,6 +13,19 @@ MySQL 5.5 database added.  Please make note of these credentials:
 ```
 mysql -u c9_user
 user c9;
+create table packs(
+       gamertag varchar(50),
+       pack_type varchar(50),
+       card_1 varchar(50),
+       card_2 varchar(50),
+       card_3 varchar(50),
+       card_4 varchar(50),
+       card_5 varchar(50),
+       opened_at timestamp default current_timestamp
+       );
 ```
-[create table](https://github.com/TheanosLearning/Gears4PackDB/blob/master/sql/packs-table.sql)
-
+3. Configure Apache CORS
+```
+sudo vim /etc/apache2/sites-enabled/000-default.conf@
+sudo vim /etc/apache2/sites-enabled/001-cloud9.conf@
+```
