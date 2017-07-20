@@ -48,7 +48,7 @@ by appending the following header rules to the [virtualhost config](https://benj
        
 </VirtualHost>
 ```
-4. Enable `mod_headers` for php
+4. Enable `mod_headers` module so that apache will [recognize](http://blog.adin.pro/2013-09-09/invalid-command-header-perhaps-misspelled-or-defined-by-a-module-not-included-in-the-server-configuration/) header rules
 ```ruby
 sudo a2enmode headers
 service apache2 restart
