@@ -10,7 +10,7 @@ MySQL 5.5 database added.  Please make note of these credentials:
    Database Name: c9
 ```
 2. Create a card pack table
-```
+```sql
 mysql -u c9_user
 user c9;
 create table packs(
@@ -22,7 +22,7 @@ create table packs(
        card_4 varchar(50),
        card_5 varchar(50),
        opened_at timestamp default current_timestamp
-       );
+);
 ```
 3. Configure Apache CORS
 ```
