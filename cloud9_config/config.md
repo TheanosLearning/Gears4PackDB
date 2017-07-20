@@ -29,7 +29,7 @@ create table packs(
 sudo vim /etc/apache2/sites-enabled/000-default.conf@
 sudo vim /etc/apache2/sites-enabled/001-cloud9.conf@
 ```
-append the following headers conifg into the `VirtualHost` block
+by appending the following header rules to the [virtualhost config](https://benjaminhorn.io/code/setting-cors-cross-origin-resource-sharing-on-apache-with-correct-response-headers-allowing-everything-through/)
 ```xml
 </VirtualHost>
        # stuff from before...
