@@ -13,5 +13,6 @@ MySQL 5.5 database added.  Please make note of these credentials:
 ```
 mysql -u c9_user
 user c9;
-![create table](https://github.com/TheanosLearning/Gears4PackDB/blob/master/sql/packs-table.sql)
 ```
+![create table](https://github.com/TheanosLearning/Gears4PackDB/blob/master/sql/packs-table.sql)
+
