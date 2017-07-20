@@ -1,2 +1,4 @@
-# Gears4PackDB
-A MySQL database full of pack information hosted on Cloud9
+# Gears4 Pack Database
+A MySQL database with an http API hosted on Cloud9
+
+![demo](https://github.com/TheanosLearning/Gears4PackDB/raw/master/images/sql-demo.png)
