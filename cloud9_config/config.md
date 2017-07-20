@@ -48,3 +48,8 @@ by appending the following header rules to the [virtualhost config](https://benj
        
 </VirtualHost>
 ```
+4. Enable `mod_headers` for php
+```ruby
+sudo a2enmode headers
+service apache2 restart
+```
