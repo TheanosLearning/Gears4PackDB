@@ -1,5 +1,7 @@
 #### Setting up a new Cloud9 workspace (*Ubuntu 14.04*)
 
+0. Create a new workspace `name > public > php template > create`
+
 1. Start the mysql-server `mysql-ctl start`
 ```
 MySQL 5.5 database added.  Please make note of these credentials:
