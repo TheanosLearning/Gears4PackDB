@@ -9,3 +9,8 @@ MySQL 5.5 database added.  Please make note of these credentials:
        Root User: c9_user
    Database Name: c9
 ```
+2. Create a card pack table
+```
+mysql -u c9_user
+user c9;
+[create table]()
