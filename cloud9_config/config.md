@@ -26,8 +26,8 @@ create table packs(
 ```
 3. Configure Apache CORS
 ```ruby
-sudo vim /etc/apache2/sites-enabled/000-default.conf@
-sudo vim /etc/apache2/sites-enabled/001-cloud9.conf@
+sudo vim /etc/apache2/sites-enabled/000-default.conf
+sudo vim /etc/apache2/sites-enabled/001-cloud9.conf
 ```
 by appending the following header rules to the [virtualhost config](https://benjaminhorn.io/code/setting-cors-cross-origin-resource-sharing-on-apache-with-correct-response-headers-allowing-everything-through/)
 ```xml
