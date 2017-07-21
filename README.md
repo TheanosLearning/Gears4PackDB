@@ -20,4 +20,4 @@ curl -X POST -H "Content-Type: application/json" -d '{"gamertag":"Tensforflow","
 ![from-command-line](https://github.com/TheanosLearning/Gears4PackDB/raw/master/images/db-curl.png)
 </br>
 </br>
-<sup>1</sup> from a Chrome extension domain.
+<sup>1</sup> *From a Chrome extension domain.*
