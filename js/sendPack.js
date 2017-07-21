@@ -1,8 +1,8 @@
 // set the endpoint
-let url = "https://gears-pack-db-carlc.c9users.io/pack-controller.php";
+var url = "https://gears-pack-db-carlc.c9users.io/pack-controller.php";
 
 // define you pack
-let pack = {
+var pack = {
     "gamertag": "your_gamer_tag",
     "pack_type": "horde booster",
     "card_1": "Silly Lancer Skin",
@@ -13,7 +13,7 @@ let pack = {
 };
 
 // create a new http request object
-let request = new XMLHttpRequest();
+var request = new XMLHttpRequest();
 
 // specify POST request
 request.open("POST", url, true);
