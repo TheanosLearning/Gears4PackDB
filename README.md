@@ -1,5 +1,6 @@
 # Gears4 Pack Database
-A MySQL database with an http API hosted on Cloud9
+A MySQL database with an http API hosted on [Cloud9](https://c9.io/)
+> View configuration [here](https://github.com/TheanosLearning/Gears4PackDB/blob/master/cloud9_config/config.md)
 
 ![demo](https://github.com/TheanosLearning/Gears4PackDB/raw/master/images/sql-demo.png)
 
