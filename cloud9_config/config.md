@@ -1,4 +1,4 @@
-> Go back to [main](https://github.com/TheanosLearning/Gears4PackDB) page.
+> Go back to [main](https://github.com/TheanosLearning/Gears4PackDB#readme) page.
 #### Setting up a new Cloud9 workspace (*Ubuntu 14.04*)
 
 0. Create a new workspace `name > public > php template > create`
