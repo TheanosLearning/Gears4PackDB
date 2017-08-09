@@ -29,7 +29,7 @@ let pack = background.recordPack(request);
 sendToCloud9(pack);
 ```
 
-additionally, add the following code [here](https://github.com/TheanosLearning/Gears4PackStats/blob/7cd5dda80426df5ed804a41aa796bb45d02f42d0/gears4-pack-stats/background/cards-recorder.js#L173)to transform and post the data to the php server running on Cloud9.
+additionally, add the following code [here](https://github.com/TheanosLearning/Gears4PackStats/blob/7cd5dda80426df5ed804a41aa796bb45d02f42d0/gears4-pack-stats/background/cards-recorder.js#L173) to transform the data and post it to the php server running on Cloud9.
 
 ```Javascript
 function transformPayload(pack) {
@@ -60,7 +60,6 @@ function sendToCloud9(pack) {
     xmlhttp.send(JSON.stringify(transformPayload(pack)));
 }
 ```
-</br>
 </br>
 </br>
 <sup>1</sup> *From a Chrome extension domain.*
