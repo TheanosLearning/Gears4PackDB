@@ -29,6 +29,38 @@ let pack = background.recordPack(request);
 sendToCloud9(pack);
 ```
 
+additionally, add the following code [here](https://github.com/TheanosLearning/Gears4PackStats/blob/7cd5dda80426df5ed804a41aa796bb45d02f42d0/gears4-pack-stats/background/cards-recorder.js#L173)to transform and post the data to the php server running on Cloud9.
+
+```Javascript
+function transformPayload(pack) {
+    console.log("transforming payload");
+    payload = {};
+    payload['gamertag'] = pack.gamertag;
+    payload['pack_type'] = pack.type;
+    for(let i = 0; i < pack.cards.length; i++) {
+        payload['card_' + (i + 1)] = pack.cards[i];
+    }
+    return payload;
+}
+
+function sendToCloud9(pack) {
+    console.log("sending pack to cloud9, pack:");
+    console.log(pack);
+    let payload = {"gamertag": pack.gamertag, "pack_type": pack.type}
+    let xmlhttp = new XMLHttpRequest();
+    let url = "https://gears-pack-db-carlc.c9users.io/pack-controller.php";
+    xmlhttp.open("POST", url, true);
+    xmlhttp.setRequestHeader("Content-type", "application/json");
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            console.log(xmlhttp.responseText);
+        }
+    }
+    console.log(transformPayload(pack));
+    xmlhttp.send(JSON.stringify(transformPayload(pack)));
+}
+```
+</br>
 </br>
 </br>
 <sup>1</sup> *From a Chrome extension domain.*
