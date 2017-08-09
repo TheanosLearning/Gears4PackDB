@@ -19,6 +19,10 @@ curl -X POST -H "Content-Type: application/json" -d '{"gamertag":"Tensforflow","
 </br>
 
 ![from-command-line](https://github.com/TheanosLearning/Gears4PackDB/raw/master/images/db-curl.png)
+
+### 3. Gears 4 Pack Stats Chrome Extension
+
+Can be configured to send pack data to Cloud9 by adding the following code to 
 </br>
 </br>
 <sup>1</sup> *From a Chrome extension domain.*
