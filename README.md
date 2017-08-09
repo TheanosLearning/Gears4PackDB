@@ -22,7 +22,13 @@ curl -X POST -H "Content-Type: application/json" -d '{"gamertag":"Tensforflow","
 
 ### 3. Gears 4 Pack Stats Chrome Extension
 
-Can be configured to send pack data to Cloud9 by adding the following code to 
+Can be configured to send pack data to Cloud9 by adding the following code to [cards-recorder.js](https://github.com/TheanosLearning/Gears4PackStats/blob/7cd5dda80426df5ed804a41aa796bb45d02f42d0/gears4-pack-stats/background/cards-recorder.js#L18)
+
+```Javascript
+let pack = background.recordPack(request);
+sendToCloud9(pack);
+```
+
 </br>
 </br>
 <sup>1</sup> *From a Chrome extension domain.*
