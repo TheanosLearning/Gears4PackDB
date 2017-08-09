@@ -63,4 +63,4 @@ function sendToCloud9(pack) {
 
 </br>
 </br>
-<sup>1</sup><i>From a Chrome extension domain</i>
+<sup>1</sup><i> From a Chrome extension domain</i>
